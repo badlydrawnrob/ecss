@@ -1,0 +1,24 @@
+{
+  "name": "ecss",
+  "version": "1.0.0-beta.1",
+  "description": "ECSS examples for cardinal and cardinal-material repos",
+  "main": "build/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://badlydrawnrob@github.com/badlydrawnrob/ecss.git"
+  },
+  "author": "Rob McDonald",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/badlydrawnrob/ecss/issues"
+  },
+  "homepage": "https://github.com/badlydrawnrob/ecss#readme",
+  "dependencies": {
+    "normalize.css": "^5.0.0",
+    "cardinal-stylus": "git+https://github.com/badlydrawnrob/cardinal-stylus.git#master",
+    "cardinal-material": "git+https://github.com/badlydrawnrob/cardinal-material.git#master"
+  }
+}
