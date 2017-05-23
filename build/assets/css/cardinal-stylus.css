@@ -7,11 +7,6 @@
  * `-variant`   - variant, modifier or state
  * =============================================================================
  */
-/*
- * == Cardinal Stylus ==========================================================
- * MIT License | https://github.com/badlydrawnrob/cardinal-stylus
- * == Ported from Cardinal CSS: http://bit.ly/2iDzOZi ==========================
- */
 @import '../../node_modules/normalize.css/normalize.css';
 html {
   box-sizing: border-box;
@@ -105,7 +100,7 @@ iframe {
   outline: none !important;
 }
 html {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Noto Sans', 'Arial', sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   overflow-y: scroll;
@@ -155,7 +150,7 @@ a:focus {
 }
 blockquote {
   color: rgba(0,0,0,0.54);
-  font-family: 'Arial', sans-serif;
+  font-family: 'Noto Sans', 'Arial', sans-serif;
   font-style: normal;
   margin-left: 1.5rem;
   padding-left: 1.5rem;
@@ -168,7 +163,7 @@ blockquote p + p {
   margin-top: 1.5rem;
 }
 blockquote cite {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Noto Sans', 'Arial', sans-serif;
   font-style: normal;
   font-size: 1rem;
   color: rgba(0,0,0,0.38);
@@ -187,7 +182,7 @@ input[type="submit"] {
   padding: 0.5rem;
   min-width: 4rem;
   color: rgba(0,0,0,0.87);
-  font-family: 'Arial', sans-serif;
+  font-family: 'Noto Sans', 'Arial', sans-serif;
   font-weight: 700;
   font-size: 0.875rem;
   text-align: center;
@@ -374,7 +369,7 @@ textarea {
   resize: vertical;
 }
 h1 {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Noto Sans', 'Arial', sans-serif;
   font-weight: normal;
   font-size: 3.5rem;
   color: rgba(0,0,0,0.87);
@@ -384,7 +379,7 @@ h1 {
   margin-bottom: 2.25rem;
 }
 h2 {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Noto Sans', 'Arial', sans-serif;
   font-weight: normal;
   font-size: 2.8125rem;
   color: rgba(0,0,0,0.87);
@@ -394,7 +389,7 @@ h2 {
   margin-bottom: 1.5rem;
 }
 h3 {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Noto Sans', 'Arial', sans-serif;
   font-weight: normal;
   font-size: 2.125rem;
   color: rgba(0,0,0,0.87);
@@ -404,7 +399,7 @@ h3 {
   margin-bottom: 2rem;
 }
 h4 {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Noto Sans', 'Arial', sans-serif;
   font-weight: normal;
   font-size: 1.5rem;
   color: rgba(0,0,0,0.87);
@@ -414,7 +409,7 @@ h4 {
   margin-bottom: 1rem;
 }
 h5 {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Noto Sans', 'Arial', sans-serif;
   font-weight: 700;
   font-size: 1.25rem;
   color: rgba(0,0,0,0.87);
@@ -424,7 +419,7 @@ h5 {
   margin-bottom: 1.125rem;
 }
 h6 {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Noto Sans', 'Arial', sans-serif;
   font-weight: normal;
   font-size: 1rem;
   color: rgba(0,0,0,0.87);
@@ -565,18 +560,185 @@ mark {
   color: rgba(0,0,0,0.87);
   background: #ff9;
 }
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/notosans-regular-webfont.woff2") format('woff2'), url("../fonts/notosans-regular-webfont.woff") format('woff');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/notosans-bold-webfont.woff2") format('woff2'), url("../fonts/notosans-bold-webfont.woff") format('woff');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/notosans-italic-webfont.woff2") format('woff2'), url("../fonts/notosans-italic-webfont.woff") format('woff');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/notosans-bolditalic-webfont.woff2") format('woff2'), url("../fonts/notosans-bolditalic-webfont.woff") format('woff');
+}
+h1 {
+  font-family: 'Noto Sans', 'Arial', sans-serif;
+  font-weight: normal;
+  font-size: 3.5rem;
+  color: rgba(0,0,0,0.87);
+  line-height: 1.5;
+  text-transform: none;
+  letter-spacing: normal;
+  margin-bottom: 0.75rem;
+}
+h2 {
+  font-family: 'Noto Sans', 'Arial', sans-serif;
+  font-weight: normal;
+  font-size: 2.8125rem;
+  color: rgba(0,0,0,0.87);
+  line-height: 1.066666666666667;
+  text-transform: none;
+  letter-spacing: normal;
+  margin-bottom: 1.5rem;
+}
+h3 {
+  font-family: 'Noto Sans', 'Arial', sans-serif;
+  font-weight: normal;
+  font-size: 2.125rem;
+  color: rgba(0,0,0,0.87);
+  line-height: 1.176470588235294;
+  text-transform: none;
+  letter-spacing: normal;
+  margin-bottom: 1.9375rem;
+}
+h4 {
+  font-family: 'Noto Sans', 'Arial', sans-serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+  color: rgba(0,0,0,0.87);
+  line-height: 1.333333333333333;
+  text-transform: none;
+  letter-spacing: normal;
+  margin-bottom: 1rem;
+}
+em,
+i,
+cite,
+dfn {
+  line-height: 1.25;
+}
 /*
  * == Jeet =====================================================================
  * Set up Jeet
  * =============================================================================
  */
+.pg-Wrapper {
+  width: auto;
+  max-width: 1024px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+}
+.pg-Wrapper::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.pg-Wrapper::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 1.5625rem;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #f00 1px, transparent 1px, transparent), linear-gradient(0deg, rgba(0,0,0,0.2) 1px, transparent 1px, transparent);
+  background-size: auto 1.5rem, auto 0.25rem;
+}
+.gl-Styleguide {
+  background: rgba(0,0,0,0.12);
+}
+.gl-Wrapper::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.gl-fontSize {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 31.33333333333333%;
+  margin-left: 0%;
+  margin-right: 3%;
+  max-height: 45rem;
+  overflow: hidden;
+  margin: 0 0 1.5rem 0;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+.gl-fontSize::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.gl-fontSize:nth-child(n) {
+  margin-right: 3%;
+  float: left;
+  clear: none;
+}
+.gl-fontSize:nth-child(3n) {
+  margin-right: 0%;
+  float: right;
+}
+.gl-fontSize:nth-child(3n + 1) {
+  clear: both;
+}
+.gl-fontSize-pppppp {
+  font-size: 7rem;
+  line-height: 1.5;
+}
+.gl-fontSize-ppppp {
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+.gl-fontSize-pppp {
+  font-size: 2.8125rem;
+  line-height: 1.066666666666667;
+}
+.gl-fontSize-ppp {
+  font-size: 2.125rem;
+  line-height: 1.176470588235294;
+}
+.gl-fontSize-pp {
+  font-size: 1.5rem;
+  line-height: 1.333333333333333;
+}
+.gl-fontSize-p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+.gl-fontSize-m {
+  font-size: 0.875rem;
+  line-height: 1.714285714285714;
+}
+.gl-fontSize-mm {
+  font-size: 0.875rem;
+  line-height: 1.428571428571429;
+}
 .btn-raised {
   display: inline-block;
   margin: 0.25rem;
   padding: 0.5rem;
   min-width: 4rem;
   color: rgba(0,0,0,0.87);
-  font-family: 'Arial', sans-serif;
+  font-family: 'Noto Sans', 'Arial', sans-serif;
   font-weight: 700;
   font-size: 0.875rem;
   text-align: center;
@@ -615,7 +777,7 @@ mark {
   padding: 0.5rem;
   min-width: 4rem;
   color: rgba(0,0,0,0.87);
-  font-family: 'Arial', sans-serif;
+  font-family: 'Noto Sans', 'Arial', sans-serif;
   font-weight: 700;
   font-size: 0.875rem;
   text-align: center;
@@ -677,16 +839,6 @@ mark {
 .type-Group:nth-child(2n + 1) {
   clear: both;
 }
-.type-Group-small {
-  font-family: 'Arial', sans-serif;
-  font-weight: normal;
-  font-size: 0.875rem;
-  color: rgba(0,0,0,0.87);
-  line-height: 1.714285714285714;
-  text-transform: none;
-  letter-spacing: normal;
-  margin-bottom: 0;
-}
 .type-Group-box {
   background: rgba(204,204,204,0.5);
 }
@@ -699,31 +851,4 @@ mark {
 .type-Group-align-two .type-GroupHeading {
   margin-bottom: 0.5rem;
   padding-top: 0.25rem;
-}
-.pg-Wrapper {
-  width: auto;
-  max-width: 1024px;
-  float: none;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 0;
-  padding-right: 0;
-  position: relative;
-}
-.pg-Wrapper::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-.pg-Wrapper::before {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  top: 1.5625rem;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(0deg, #f00 1px, transparent 1px, transparent), linear-gradient(0deg, rgba(0,0,0,0.2) 1px, transparent 1px, transparent);
-  background-size: auto 1.5rem, auto 0.25rem;
 }

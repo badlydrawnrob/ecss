@@ -630,180 +630,107 @@ cite,
 dfn {
   line-height: 1.25;
 }
-.btn-flat,
-input[type="button"].btn-flat,
-input[type="submit"].btn-flat {
-  display: inline-block;
-  margin: 0.25rem;
-  padding: 0.5rem;
-  min-width: 4rem;
-  color: rgba(0,0,0,0.87);
-  font-family: 'Noto Sans', 'Arial', sans-serif;
-  font-weight: 700;
+/*
+ * == Jeet =====================================================================
+ * Set up Jeet
+ * =============================================================================
+ */
+.pg-Wrapper {
+  width: auto;
+  max-width: 1024px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+}
+.pg-Wrapper::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.pg-Wrapper::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 1.5625rem;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #f00 1px, transparent 1px, transparent), linear-gradient(0deg, rgba(0,0,0,0.2) 1px, transparent 1px, transparent);
+  background-size: auto 1.5rem, auto 0.25rem;
+}
+.gl-Styleguide {
+  background: rgba(0,0,0,0.12);
+}
+.gl-Wrapper::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.gl-fontSize {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 31.33333333333333%;
+  margin-left: 0%;
+  margin-right: 3%;
+  max-height: 45rem;
+  overflow: hidden;
+  margin: 0 0 1.5rem 0;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+.gl-fontSize::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.gl-fontSize:nth-child(n) {
+  margin-right: 3%;
+  float: left;
+  clear: none;
+}
+.gl-fontSize:nth-child(3n) {
+  margin-right: 0%;
+  float: right;
+}
+.gl-fontSize:nth-child(3n + 1) {
+  clear: both;
+}
+.gl-fontSize-pppppp {
+  font-size: 7rem;
+  line-height: 1.5;
+}
+.gl-fontSize-ppppp {
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+.gl-fontSize-pppp {
+  font-size: 2.8125rem;
+  line-height: 1.066666666666667;
+}
+.gl-fontSize-ppp {
+  font-size: 2.125rem;
+  line-height: 1.176470588235294;
+}
+.gl-fontSize-pp {
+  font-size: 1.5rem;
+  line-height: 1.333333333333333;
+}
+.gl-fontSize-p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+.gl-fontSize-m {
   font-size: 0.875rem;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: normal;
   line-height: 1.714285714285714;
-  vertical-align: middle;
-  white-space: nowrap;
-  cursor: pointer;
-  background-color: #fff;
-  border: 0 none;
-  border-radius: 0.25rem;
-  box-shadow: none;
 }
-.btn-flat:hover,
-input[type="button"].btn-flat:hover,
-input[type="submit"].btn-flat:hover {
-  background-color: #f5f5f5;
-}
-.btn-flat:active,
-input[type="button"].btn-flat:active,
-input[type="submit"].btn-flat:active {
-  background-color: #e0e0e0;
-}
-.btn-flat:active:focus,
-input[type="button"].btn-flat:active:focus,
-input[type="submit"].btn-flat:active:focus {
-  outline: 0 none;
-}
-.btn-flat:disabled,
-input[type="button"].btn-flat:disabled,
-input[type="submit"].btn-flat:disabled {
-  color: rgba(0,0,0,0.38);
-  cursor: not-allowed;
-  pointer-events: none;
-  box-shadow: none;
-  text-shadow: none;
-}
-.btn-floating,
-input[type="button"].btn-floating,
-input[type="submit"].btn-floating {
-  display: inline-block;
-  height: 3.5rem;
-  width: 3.5rem;
-  margin: 0.25rem;
-  padding: 0.5rem;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
-  white-space: nowrap;
-  cursor: pointer;
-  background-color: #f5f5f5;
-  border: 0 none;
-  border-radius: 50%;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-.btn-floating:hover,
-input[type="button"].btn-floating:hover,
-input[type="submit"].btn-floating:hover {
-  background-color: #f5f5f5;
-}
-.btn-floating:active,
-input[type="button"].btn-floating:active,
-input[type="submit"].btn-floating:active {
-  background-color: #e0e0e0;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
-.btn-floating:active:focus,
-input[type="button"].btn-floating:active:focus,
-input[type="submit"].btn-floating:active:focus {
-  outline: 0 none;
-}
-.btn-floating:disabled,
-input[type="button"].btn-floating:disabled,
-input[type="submit"].btn-floating:disabled {
-  color: rgba(0,0,0,0.38);
-  text-shadow: none;
-  cursor: not-allowed;
-  pointer-events: none;
-  box-shadow: none;
-}
-.btn-floating-mini,
-input[type="button"].btn-floating-mini,
-input[type="submit"].btn-floating-mini {
-  display: inline-block;
-  height: 2.5rem;
-  width: 2.5rem;
-  margin: 0.25rem;
-  padding: 0.5rem;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
-  white-space: nowrap;
-  cursor: pointer;
-  background-color: #f5f5f5;
-  border: 0 none;
-  border-radius: 50%;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-.btn-floating-mini:hover,
-input[type="button"].btn-floating-mini:hover,
-input[type="submit"].btn-floating-mini:hover {
-  background-color: #f5f5f5;
-}
-.btn-floating-mini:active,
-input[type="button"].btn-floating-mini:active,
-input[type="submit"].btn-floating-mini:active {
-  background-color: #e0e0e0;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
-.btn-floating-mini:active:focus,
-input[type="button"].btn-floating-mini:active:focus,
-input[type="submit"].btn-floating-mini:active:focus {
-  outline: 0 none;
-}
-.btn-floating-mini:disabled,
-input[type="button"].btn-floating-mini:disabled,
-input[type="submit"].btn-floating-mini:disabled {
-  color: rgba(0,0,0,0.38);
-  text-shadow: none;
-  cursor: not-allowed;
-  pointer-events: none;
-  box-shadow: none;
-}
-.btn-icon,
-input[type="button"].btn-icon,
-input[type="submit"].btn-icon {
-  display: inline-block;
-  margin: 0.25rem;
-  padding: 0.5rem;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
-  white-space: nowrap;
-  cursor: pointer;
-  background-color: #fff;
-  border: 0 none;
-  border-radius: 50%;
-}
-.btn-icon:hover,
-input[type="button"].btn-icon:hover,
-input[type="submit"].btn-icon:hover {
-  background-color: #f5f5f5;
-}
-.btn-icon:active,
-input[type="button"].btn-icon:active,
-input[type="submit"].btn-icon:active {
-  background-color: #e0e0e0;
-}
-.type-Group {
-  padding: 1.5rem;
-}
-.type-Group-box {
-  background: rgba(204,204,204,0.5);
-}
-.type-Group-align {
-  margin-top: 0.5rem;
-}
-.type-Group-align .type-GroupHeading {
-  margin-bottom: 1.5rem;
-}
-.type-Group-align-two .type-GroupHeading {
-  margin-bottom: 0.5rem;
-  padding-top: 0.25rem;
+.gl-fontSize-mm {
+  font-size: 0.875rem;
+  line-height: 1.428571428571429;
 }
 .menu-List,
 .menu-ListRow,
@@ -888,36 +815,24 @@ input[type="submit"].btn-icon:active {
 .nav-ListLink:focus {
   color: rgba(0,0,0,0.54);
 }
-/*
- * == Jeet =====================================================================
- * Set up Jeet
- * =============================================================================
- */
-.pg-Wrapper {
-  width: auto;
-  max-width: 1024px;
-  float: none;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 0;
-  padding-right: 0;
-}
-.pg-Wrapper::after {
-  content: '';
-  display: table;
-  clear: both;
-}
 .pg-Components {
   position: relative;
 }
-.pg-Components::before {
+.pg-Components::before,
+.pg-Components::after {
   content: '';
   position: absolute;
   z-index: -1;
   display: block;
   width: 100%;
   height: 100%;
-  background: linear-gradient(0deg, #f00 1px, transparent 1px, transparent), linear-gradient(0deg, rgba(0,0,0,0.2) 1px, transparent 1px, transparent);
-  background-size: auto 1.5rem, auto 0.25rem;
+}
+.pg-Components::before {
+  background: linear-gradient(0deg, rgba(0,0,255,0.2), rgba(0,0,255,0.2) 1px, transparent 1px, transparent), linear-gradient(90deg, rgba(0,0,255,0.2), rgba(0,0,255,0.2) 1px, transparent 1px, transparent);
+  background-size: auto 0.5rem, 0.5rem auto;
+}
+.pg-Components::after {
+  top: 0;
+  right: -0.0625rem;
+  border-right: 0.0625rem solid rgba(0,0,255,0.2);
 }
