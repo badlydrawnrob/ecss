@@ -1,0 +1,39 @@
+/*!
+ * == ECSS 101 =================================================================
+ * Isolated, predictable and maintainable styles http://ecss.io/
+ * `.nsp`       - A micro namespace can provide context
+ * `-Component` - The name or the file or logic/file that creates this item
+ * `_ChildNode` - Any child nodes are delineated with an underscore
+ * `-variant`   - variant, modifier or state
+ * =============================================================================
+ */
+
+@import '../../node_modules/cardinal-material/source/stylus/cardinal-material'
+
+@import '../cardinal-material/global/*'
+@import '../cardinal-material/menu/*'
+@import '../cardinal-material/navigation/*'
+
+/*!
+ * == Jeet =====================================================================
+ * Set up Jeet
+ * =============================================================================
+ */
+
+@import "jeet"
+
+$jeet = {
+  gutter: 3
+  'max-width': $grid.max.width
+  'layout-direction': LTR
+  'parent-first': false
+}
+
+// Page setup ==================================================================
+
+.pg-Wrapper
+  center()
+
+.pg-Components
+  // component-grid()
+  baseline-grid()
