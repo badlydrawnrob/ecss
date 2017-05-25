@@ -1,6 +1,6 @@
 {
   "name": "ecss",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "description": "ECSS examples for cardinal and cardinal-material repos",
   "main": "build/index.html",
   "scripts": {
