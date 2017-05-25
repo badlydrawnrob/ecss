@@ -1,0 +1,61 @@
+/*!
+ * == Jeet =====================================================================
+ * Set up Jeet
+ * =============================================================================
+ */
+
+@import "jeet"
+
+$jeet = {
+  gutter: 3
+  'max-width': $grid.max.width
+  'layout-direction': LTR
+  'parent-first': false
+}
+
+// Shared styleguide ===========================================================
+
+.gl-Styleguide
+  // background: $color.b
+
+.gl-Wrapper
+  clearfix()
+
+.gl-Pairings
+  column(1/2, $cycle: 2)
+  padding: $spacing.base $spacing.two
+
+.gl-FontSize
+  font-size: $font.size.base
+
+  &.gl-LineHeight-p
+    margin-bottom: $spacing.half - $spacing.micro
+    line-height: $line.height.p
+
+.gl-FontSize-pppp
+  margin-bottom: $spacing.one + $spacing.quarter
+  font-size: $font.size.pppp
+
+.gl-FontSize-ppp
+  margin-bottom: $spacing.one - $spacing.micro
+  font-size: $font.size.ppp
+
+.gl-FontSize-pp
+  margin-bottom: $spacing.half + $spacing.micro
+  font-size: $font.size.pp
+
+.gl-FontSize-m
+  font-size: $font.size.m
+
+  &.gl-LineHeight-mm
+    line-height: $line.height.mm
+
+
+.gl-Aligned
+  column(1/2)
+
+.gl-AlignedHeader
+  //
+
+.gl-AlignedText
+  //

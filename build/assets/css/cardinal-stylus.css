@@ -7,11 +7,6 @@
  * `-variant`   - variant, modifier or state
  * =============================================================================
  */
-/*
- * == Cardinal Stylus ==========================================================
- * MIT License | https://github.com/badlydrawnrob/cardinal-stylus
- * == Ported from Cardinal CSS: http://bit.ly/2iDzOZi ==========================
- */
 @import '../../node_modules/normalize.css/normalize.css';
 html {
   box-sizing: border-box;
@@ -105,7 +100,7 @@ iframe {
   outline: none !important;
 }
 html {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Noto Sans', 'Arial', sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   overflow-y: scroll;
@@ -155,7 +150,7 @@ a:focus {
 }
 blockquote {
   color: rgba(0,0,0,0.54);
-  font-family: 'Arial', sans-serif;
+  font-family: 'Noto Sans', 'Arial', sans-serif;
   font-style: normal;
   margin-left: 1.5rem;
   padding-left: 1.5rem;
@@ -168,7 +163,7 @@ blockquote p + p {
   margin-top: 1.5rem;
 }
 blockquote cite {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Noto Sans', 'Arial', sans-serif;
   font-style: normal;
   font-size: 1rem;
   color: rgba(0,0,0,0.38);
@@ -183,18 +178,18 @@ button,
 input[type="button"],
 input[type="submit"] {
   display: inline-block;
-  margin: 0.25rem;
+  margin: 0.375rem 0.5rem;
   padding: 0.5rem;
   min-width: 4rem;
   color: rgba(0,0,0,0.87);
-  font-family: 'Arial', sans-serif;
+  font-family: 'Noto Sans', 'Arial', sans-serif;
   font-weight: 700;
   font-size: 0.875rem;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: normal;
-  line-height: 1.714285714285714;
+  line-height: 1.5;
   vertical-align: middle;
   white-space: nowrap;
   cursor: pointer;
@@ -374,7 +369,7 @@ textarea {
   resize: vertical;
 }
 h1 {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Noto Sans', 'Arial', sans-serif;
   font-weight: normal;
   font-size: 3.5rem;
   color: rgba(0,0,0,0.87);
@@ -384,7 +379,7 @@ h1 {
   margin-bottom: 2.25rem;
 }
 h2 {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Noto Sans', 'Arial', sans-serif;
   font-weight: normal;
   font-size: 2.8125rem;
   color: rgba(0,0,0,0.87);
@@ -394,7 +389,7 @@ h2 {
   margin-bottom: 1.5rem;
 }
 h3 {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Noto Sans', 'Arial', sans-serif;
   font-weight: normal;
   font-size: 2.125rem;
   color: rgba(0,0,0,0.87);
@@ -404,7 +399,7 @@ h3 {
   margin-bottom: 2rem;
 }
 h4 {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Noto Sans', 'Arial', sans-serif;
   font-weight: normal;
   font-size: 1.5rem;
   color: rgba(0,0,0,0.87);
@@ -414,7 +409,7 @@ h4 {
   margin-bottom: 1rem;
 }
 h5 {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Noto Sans', 'Arial', sans-serif;
   font-weight: 700;
   font-size: 1.25rem;
   color: rgba(0,0,0,0.87);
@@ -424,7 +419,7 @@ h5 {
   margin-bottom: 1.125rem;
 }
 h6 {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Noto Sans', 'Arial', sans-serif;
   font-weight: normal;
   font-size: 1rem;
   color: rgba(0,0,0,0.87);
@@ -565,64 +560,167 @@ mark {
   color: rgba(0,0,0,0.87);
   background: #ff9;
 }
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/notosans-regular-webfont.woff2") format('woff2'), url("../fonts/notosans-regular-webfont.woff") format('woff');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/notosans-bold-webfont.woff2") format('woff2'), url("../fonts/notosans-bold-webfont.woff") format('woff');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/notosans-italic-webfont.woff2") format('woff2'), url("../fonts/notosans-italic-webfont.woff") format('woff');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/notosans-bolditalic-webfont.woff2") format('woff2'), url("../fonts/notosans-bolditalic-webfont.woff") format('woff');
+}
+h1 {
+  font-family: 'Noto Sans', 'Arial', sans-serif;
+  font-weight: normal;
+  font-size: 3.5rem;
+  color: rgba(0,0,0,0.87);
+  line-height: 1.5;
+  text-transform: none;
+  letter-spacing: normal;
+  margin-bottom: 0.75rem;
+}
+h2 {
+  font-family: 'Noto Sans', 'Arial', sans-serif;
+  font-weight: normal;
+  font-size: 2.8125rem;
+  color: rgba(0,0,0,0.87);
+  line-height: 1.066666666666667;
+  text-transform: none;
+  letter-spacing: normal;
+  margin-bottom: 1.5rem;
+}
+h3 {
+  font-family: 'Noto Sans', 'Arial', sans-serif;
+  font-weight: normal;
+  font-size: 2.125rem;
+  color: rgba(0,0,0,0.87);
+  line-height: 1.176470588235294;
+  text-transform: none;
+  letter-spacing: normal;
+  margin-bottom: 1.9375rem;
+}
+h4 {
+  font-family: 'Noto Sans', 'Arial', sans-serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+  color: rgba(0,0,0,0.87);
+  line-height: 1.333333333333333;
+  text-transform: none;
+  letter-spacing: normal;
+  margin-bottom: 1rem;
+}
+em,
+i,
+cite,
+dfn {
+  line-height: 1.25;
+}
 /*
  * == Jeet =====================================================================
  * Set up Jeet
  * =============================================================================
  */
-.btn-raised {
-  display: inline-block;
-  margin: 0.25rem;
-  padding: 0.5rem;
-  min-width: 4rem;
-  color: rgba(0,0,0,0.87);
-  font-family: 'Arial', sans-serif;
-  font-weight: 700;
+.gl-Wrapper::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.gl-Pairings {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 48.5%;
+  margin-left: 0%;
+  margin-right: 3%;
+  padding: 1.5rem 2rem;
+}
+.gl-Pairings::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.gl-Pairings:nth-child(n) {
+  margin-right: 3%;
+  float: left;
+  clear: none;
+}
+.gl-Pairings:nth-child(2n) {
+  margin-right: 0%;
+  float: right;
+}
+.gl-Pairings:nth-child(2n + 1) {
+  clear: both;
+}
+.gl-FontSize {
+  font-size: 1rem;
+}
+.gl-FontSize.gl-LineHeight-p {
+  margin-bottom: 0.375rem;
+  line-height: 1.75;
+}
+.gl-FontSize-pppp {
+  margin-bottom: 1.25rem;
+  font-size: 2.8125rem;
+}
+.gl-FontSize-ppp {
+  margin-bottom: 0.875rem;
+  font-size: 2.125rem;
+}
+.gl-FontSize-pp {
+  margin-bottom: 0.625rem;
+  font-size: 1.5rem;
+}
+.gl-FontSize-m {
   font-size: 0.875rem;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: normal;
-  line-height: 1.714285714285714;
-  vertical-align: middle;
-  white-space: nowrap;
-  cursor: pointer;
-  background-color: #f5f5f5;
-  border: 0 none;
-  border-radius: 0.25rem;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
-.btn-raised:hover {
-  background-color: #f5f5f5;
+.gl-FontSize-m.gl-LineHeight-mm {
+  line-height: 1.428571428571429;
 }
-.btn-raised:active {
-  background-color: #e0e0e0;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+.gl-Aligned {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 48.5%;
+  margin-left: 0%;
+  margin-right: 3%;
 }
-.btn-raised:active:focus {
-  outline: 0 none;
+.gl-Aligned::after {
+  content: '';
+  display: table;
+  clear: both;
 }
-.btn-raised:disabled {
-  color: rgba(0,0,0,0.38);
-  cursor: not-allowed;
-  pointer-events: none;
-  box-shadow: none;
-  text-shadow: none;
+.gl-Aligned:last-child {
+  margin-right: 0%;
 }
 .btn-flat {
   display: inline-block;
-  margin: 0.25rem;
+  margin: 0.375rem 0.5rem;
   padding: 0.5rem;
   min-width: 4rem;
   color: rgba(0,0,0,0.87);
-  font-family: 'Arial', sans-serif;
+  font-family: 'Noto Sans', 'Arial', sans-serif;
   font-weight: 700;
   font-size: 0.875rem;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: normal;
-  line-height: 1.714285714285714;
+  line-height: 1.5;
   vertical-align: middle;
   white-space: nowrap;
   cursor: pointer;
@@ -645,60 +743,6 @@ mark {
   pointer-events: none;
   box-shadow: none;
   text-shadow: none;
-}
-.type-Wrapper::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-.type-Group {
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 48.5%;
-  margin-left: 0%;
-  margin-right: 3%;
-  padding: 1.5rem;
-}
-.type-Group::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-.type-Group:nth-child(n) {
-  margin-right: 3%;
-  float: left;
-  clear: none;
-}
-.type-Group:nth-child(2n) {
-  margin-right: 0%;
-  float: right;
-}
-.type-Group:nth-child(2n + 1) {
-  clear: both;
-}
-.type-Group-small {
-  font-family: 'Arial', sans-serif;
-  font-weight: normal;
-  font-size: 0.875rem;
-  color: rgba(0,0,0,0.87);
-  line-height: 1.714285714285714;
-  text-transform: none;
-  letter-spacing: normal;
-  margin-bottom: 0;
-}
-.type-Group-box {
-  background: rgba(204,204,204,0.5);
-}
-.type-Group-align {
-  margin-top: 0.5rem;
-}
-.type-Group-align .type-GroupHeading {
-  margin-bottom: 1.5rem;
-}
-.type-Group-align-two .type-GroupHeading {
-  margin-bottom: 0.5rem;
-  padding-top: 0.25rem;
 }
 .pg-Wrapper {
   width: auto;
@@ -726,4 +770,25 @@ mark {
   height: 100%;
   background: linear-gradient(0deg, #f00 1px, transparent 1px, transparent), linear-gradient(0deg, rgba(0,0,0,0.2) 1px, transparent 1px, transparent);
   background-size: auto 1.5rem, auto 0.25rem;
+}
+.pg-Components {
+  position: relative;
+}
+.pg-Components::before,
+.pg-Components::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.pg-Components::before {
+  background: linear-gradient(0deg, rgba(0,0,255,0.2), rgba(0,0,255,0.2) 1px, transparent 1px, transparent), linear-gradient(90deg, rgba(0,0,255,0.2), rgba(0,0,255,0.2) 1px, transparent 1px, transparent);
+  background-size: auto 0.5rem, 0.5rem auto;
+}
+.pg-Components::after {
+  top: 0;
+  right: -0.0625rem;
+  border-right: 0.0625rem solid rgba(0,0,255,0.2);
 }

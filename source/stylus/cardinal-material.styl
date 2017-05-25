@@ -9,31 +9,15 @@
  */
 
 @import '../../node_modules/cardinal-material/source/stylus/cardinal-material'
+@import './global-config'
 
-@import '../cardinal-material/global/*'
+@import '../cardinal-material/buttons/*'
 @import '../cardinal-material/menu/*'
 @import '../cardinal-material/navigation/*'
 
-/*!
- * == Jeet =====================================================================
- * Set up Jeet
- * =============================================================================
- */
-
-@import "jeet"
-
-$jeet = {
-  gutter: 3
-  'max-width': $grid.max.width
-  'layout-direction': LTR
-  'parent-first': false
-}
-
-// Page setup ==================================================================
-
 .pg-Wrapper
   center()
+  baseline-grid($spacing.base + $spacing.px)
 
 .pg-Components
-  // component-grid()
-  baseline-grid()
+  component-grid()

@@ -178,7 +178,7 @@ button,
 input[type="button"],
 input[type="submit"] {
   display: inline-block;
-  margin: 0.25rem;
+  margin: 0.375rem 0.5rem;
   padding: 0.5rem;
   min-width: 4rem;
   color: rgba(0,0,0,0.87);
@@ -189,7 +189,7 @@ input[type="submit"] {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: normal;
-  line-height: 1.714285714285714;
+  line-height: 1.5;
   vertical-align: middle;
   white-space: nowrap;
   cursor: pointer;
@@ -630,11 +630,88 @@ cite,
 dfn {
   line-height: 1.25;
 }
+/*
+ * == Jeet =====================================================================
+ * Set up Jeet
+ * =============================================================================
+ */
+.gl-Wrapper::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.gl-Pairings {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 48.5%;
+  margin-left: 0%;
+  margin-right: 3%;
+  padding: 1.5rem 2rem;
+}
+.gl-Pairings::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.gl-Pairings:nth-child(n) {
+  margin-right: 3%;
+  float: left;
+  clear: none;
+}
+.gl-Pairings:nth-child(2n) {
+  margin-right: 0%;
+  float: right;
+}
+.gl-Pairings:nth-child(2n + 1) {
+  clear: both;
+}
+.gl-FontSize {
+  font-size: 1rem;
+}
+.gl-FontSize.gl-LineHeight-p {
+  margin-bottom: 0.375rem;
+  line-height: 1.75;
+}
+.gl-FontSize-pppp {
+  margin-bottom: 1.25rem;
+  font-size: 2.8125rem;
+}
+.gl-FontSize-ppp {
+  margin-bottom: 0.875rem;
+  font-size: 2.125rem;
+}
+.gl-FontSize-pp {
+  margin-bottom: 0.625rem;
+  font-size: 1.5rem;
+}
+.gl-FontSize-m {
+  font-size: 0.875rem;
+}
+.gl-FontSize-m.gl-LineHeight-mm {
+  line-height: 1.428571428571429;
+}
+.gl-Aligned {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 48.5%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+.gl-Aligned::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.gl-Aligned:last-child {
+  margin-right: 0%;
+}
 .btn-flat,
 input[type="button"].btn-flat,
 input[type="submit"].btn-flat {
   display: inline-block;
-  margin: 0.25rem;
+  margin: 0.375rem 0.5rem;
   padding: 0.5rem;
   min-width: 4rem;
   color: rgba(0,0,0,0.87);
@@ -645,7 +722,7 @@ input[type="submit"].btn-flat {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: normal;
-  line-height: 1.714285714285714;
+  line-height: 1.5;
   vertical-align: middle;
   white-space: nowrap;
   cursor: pointer;
@@ -789,22 +866,6 @@ input[type="button"].btn-icon:active,
 input[type="submit"].btn-icon:active {
   background-color: #e0e0e0;
 }
-.type-Group {
-  padding: 1.5rem;
-}
-.type-Group-box {
-  background: rgba(204,204,204,0.5);
-}
-.type-Group-align {
-  margin-top: 0.5rem;
-}
-.type-Group-align .type-GroupHeading {
-  margin-bottom: 1.5rem;
-}
-.type-Group-align-two .type-GroupHeading {
-  margin-bottom: 0.5rem;
-  padding-top: 0.25rem;
-}
 .menu-List,
 .menu-ListRow,
 .menu-ListColumn {
@@ -855,7 +916,7 @@ input[type="submit"].btn-icon:active {
   margin: 0;
   list-style: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 840px) {
   .nav-List {
     width: 50%;
     margin: 0 auto;
@@ -888,11 +949,6 @@ input[type="submit"].btn-icon:active {
 .nav-ListLink:focus {
   color: rgba(0,0,0,0.54);
 }
-/*
- * == Jeet =====================================================================
- * Set up Jeet
- * =============================================================================
- */
 .pg-Wrapper {
   width: auto;
   max-width: 1024px;
@@ -902,22 +958,42 @@ input[type="submit"].btn-icon:active {
   margin-left: auto;
   padding-left: 0;
   padding-right: 0;
+  position: relative;
 }
 .pg-Wrapper::after {
   content: '';
   display: table;
   clear: both;
 }
+.pg-Wrapper::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 1.5625rem;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #f00 1px, transparent 1px, transparent), linear-gradient(0deg, rgba(0,0,0,0.2) 1px, transparent 1px, transparent);
+  background-size: auto 1.5rem, auto 0.25rem;
+}
 .pg-Components {
   position: relative;
 }
-.pg-Components::before {
+.pg-Components::before,
+.pg-Components::after {
   content: '';
   position: absolute;
   z-index: -1;
   display: block;
   width: 100%;
   height: 100%;
-  background: linear-gradient(0deg, #f00 1px, transparent 1px, transparent), linear-gradient(0deg, rgba(0,0,0,0.2) 1px, transparent 1px, transparent);
-  background-size: auto 1.5rem, auto 0.25rem;
+}
+.pg-Components::before {
+  background: linear-gradient(0deg, rgba(0,0,255,0.2), rgba(0,0,255,0.2) 1px, transparent 1px, transparent), linear-gradient(90deg, rgba(0,0,255,0.2), rgba(0,0,255,0.2) 1px, transparent 1px, transparent);
+  background-size: auto 0.5rem, 0.5rem auto;
+}
+.pg-Components::after {
+  top: 0;
+  right: -0.0625rem;
+  border-right: 0.0625rem solid rgba(0,0,255,0.2);
 }
