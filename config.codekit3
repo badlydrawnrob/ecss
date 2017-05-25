@@ -84,17 +84,11 @@
 		"ft": 8,
 		"iC": 0,
 		"ma": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/build\/cardinal-material\/buttons\/buttons.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
-		},
-	"\/source\/cardinal-material\/global.kit": {
-		"ft": 2048,
-		"oA": 0,
-		"oAP": "\/build\/cardinal-material\/global.html",
-		"oF": 0
 		},
 	"\/source\/cardinal-material\/index.kit": {
 		"ft": 2048,
@@ -170,25 +164,6 @@
 		"oA": 0,
 		"oAP": "\/build\/cardinal-stylus\/index.html",
 		"oF": 0
-		},
-	"\/source\/cardinal-stylus\/typography\/typography.kit": {
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/build\/cardinal-stylus\/typography\/typography.html",
-		"oF": 0
-		},
-	"\/source\/cardinal-stylus\/typography\/typography.styl": {
-		"aP": 0,
-		"bl": 0,
-		"dS": 0,
-		"ft": 8,
-		"iC": 0,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/build\/cardinal-stylus\/typography\/typography.css",
-		"oF": 0,
-		"oS": 0,
-		"rrU": 0
 		},
 	"\/source\/index.kit": {
 		"ft": 2048,

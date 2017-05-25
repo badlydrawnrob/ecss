@@ -11,8 +11,13 @@
 @import '../../node_modules/cardinal-material/source/stylus/cardinal-material'
 @import './global-config'
 
+@import '../cardinal-material/buttons/*'
 @import '../cardinal-material/menu/*'
 @import '../cardinal-material/navigation/*'
+
+.pg-Wrapper
+  center()
+  baseline-grid($spacing.base + $spacing.px)
 
 .pg-Components
   component-grid()

@@ -11,8 +11,11 @@
 @import '../../node_modules/cardinal-material/source/stylus/cardinal-material'
 @import './global-config'
 
-
-// Cardinal ecss ===============================================================
-
 @import '../cardinal-stylus/buttons/*'
-@import '../cardinal-stylus/typography/*'
+
+.pg-Wrapper
+  center()
+  baseline-grid($spacing.base + $spacing.px)
+
+.pg-Components
+  component-grid()
