@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/badlydrawnrob/ecss#readme",
   "dependencies": {
-    "normalize.css": "^5.0.0",
-    "cardinal-stylus": "git+https://github.com/badlydrawnrob/cardinal-stylus.git#master",
-    "cardinal-material": "git+https://github.com/badlydrawnrob/cardinal-material.git#master"
-  }
+    "cardinal-material": "git+https://github.com/badlydrawnrob/cardinal-material.git#master",
+    "cardinal-stylus": "git+https://github.com/badlydrawnrob/cardinal-stylus.git#master"
+  },
+  "false": {}
 }
