@@ -1,6 +1,6 @@
 {
   "name": "ecss",
-  "version": "1.0.0-beta.2",
+  "version": "1.0.0-beta.3",
   "description": "ECSS examples for cardinal and cardinal-material repos",
   "main": "build/index.html",
   "scripts": {
@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/badlydrawnrob/ecss#readme",
   "dependencies": {
-    "normalize.css": "^5.0.0",
-    "cardinal-stylus": "git+https://github.com/badlydrawnrob/cardinal-stylus.git#master",
-    "cardinal-material": "git+https://github.com/badlydrawnrob/cardinal-material.git#master"
-  }
+    "cardinal-material": "git+https://github.com/badlydrawnrob/cardinal-material.git#master",
+    "cardinal-stylus": "git+https://github.com/badlydrawnrob/cardinal-stylus.git#master"
+  },
+  "false": {}
 }
