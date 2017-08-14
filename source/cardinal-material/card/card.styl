@@ -1,0 +1,141 @@
+// Notes =======================================================================
+// #1: 4:3 ratio
+//     != Doesn't align properly with component-grid()
+// #2: Vertical absolute positioning: http://bit.ly/2rR0NJs
+// #3: Compensate for 24px icon
+
+.card
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  border-radius: $border.radius
+  box-shadow: 0 1px 3px alpha(#000, 12%), 0 1px 2px alpha(#000, 24%)
+
+  @media (min-width: $screen.md)
+    border-radius: 0
+
+.card-Main
+  // pass
+
+.card-More
+  margin-top: auto
+
+.card-Figure
+  position: relative
+  background: $color.ddd
+  border-top-left-radius: $border.radius
+  border-top-right-radius: $border.radius
+
+  @media (min-width: $screen.md)
+    border-radius: 0
+
+.card-Image
+  width: 100%  // #1
+
+.card-ProfileImage
+  position: absolute // #2
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  margin: auto $spacing.one
+  width: auto
+  height: 80%
+  background-color: $color.ll
+  border-radius: 50%
+  object-fit: cover
+
+.card-Header
+  margin-bottom: 0
+  font-size: $font.size.pp
+  line-height: $line.height.pp
+
+.card-SubHeader
+  margin-bottom: $spacing.one
+  color: $color.bbb
+  font-size: $font.size.m
+  font-weight: 700
+  line-height: $line.height.m
+
+.card-Section
+  padding: 0 $spacing.one
+
+  @media (min-width: $screen.md)
+    padding: 0 $spacing.base
+
+  &-actions
+    display: flex
+    justify-content: flex-end
+    padding: 0 $spacing.quarter
+
+.card-Text
+  color: $color.bbb
+  font-size: $font.size.m
+  line-height: $line.height.m
+
+.card-Button
+  display: inline-block
+  min-width: 0
+  padding: ($spacing.quarter + $spacing.micro)
+  color: $color.bbbb
+  vertical-align: middle
+  white-space: nowrap
+  cursor: pointer
+  background-color: transparent
+  border: none
+  border-radius: 50%
+  box-shadow: none
+
+  &:hover
+    background-color: $color.b
+  &:active
+    background-color: $color.b
+    box-shadow: none
+
+.card-ButtonIcon
+  width: $spacing.base  // #3
+  height: $spacing.base  // #3
+
+.card-ButtonFloating
+  position: absolute
+  right: $spacing.one
+  bottom: - $spacing.two
+  display: inline-block
+  height: ($spacing.three + $spacing.half)
+  width: ($spacing.three + $spacing.half)
+  margin: $spacing.quarter
+  padding: $spacing.half
+  text-align: center
+  text-decoration: none
+  vertical-align: middle
+  white-space: nowrap
+  cursor: pointer
+  background-color: $color.l
+  border: 0 none
+  border-radius: 50%
+  box-shadow: 0 1px 3px alpha(#000, 12%), 0 1px 2px alpha(#000, 24%)
+
+  .design &
+    background-color: $color.l
+
+  &:hover
+    background-color: $color.ll
+  &:active
+    background-color: $color.ll
+    box-shadow: 0 3px 6px alpha(#000, 16%), 0 3px 6px alpha(#000, 23%)
+  &:active:focus
+    outline: 0 none
+  &:disabled
+    color: $color.bb
+    text-shadow: none
+    cursor: not-allowed
+    pointer-events: none
+    box-shadow: none
+
+.card-ButtonFloatingIcon
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  margin: auto
