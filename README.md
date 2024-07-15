@@ -1,7 +1,8 @@
 # ECSS
-Ben Frain's [ECSS](http://ecss.io/) naming conventions. All components are self-contained, grouped with their `html`/`js`/`...` files. Roll your [own classes and components](http://ecss.io/chapter5.html)!
 
-> Be pragmatic, use as much as is appropriate
+> Be pragmatic, use as much as is appropriate. For small things, this might be overkill.
+
+Ben Frain's [ECSS](https://ecss.benfrain.com) naming conventions. All components are self-contained, grouped with their `html`/`js`/`...` files. Roll your [own classes and components](https://ecss.benfrain.com/chapter4.html)!
 
 #### Example
 
@@ -26,14 +27,14 @@ shopping-cart-template/
 ```
 
 ### CSS declaration order
-Use [css declaration order](http://codeguide.co/#css-declaration-order) by @mdo,
-but mixins come first.
+Use [css declaration order](https://codeguide.co/#declaration-order) by @mdo. Mixins (if any) also come first.
 
-1. Mixins
-2. Positioning
-3. Box model
-4. Typographic
-5. Visual
+1. Positioning
+2. Box model
+3. Typography
+4. Visual
+5. Miscellaneous
+
 
 ```stylus
 .declaration-order
@@ -48,7 +49,7 @@ but mixins come first.
   left: 0
   z-index: 100
 
-  // Box-model
+  // Box model
   display: block
   float: right
   width: 100px
