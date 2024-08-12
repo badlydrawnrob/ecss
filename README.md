@@ -1,6 +1,9 @@
 # ECSS
 
-> Be pragmatic, use as much as is appropriate. For small things, this might be overkill.
+> ⚠️ For small things, such as Anki Programming Themes, this is overkill.
+> It's proven effective for large-scale projects with large teams.
+> The alternative that I'm now working with is [GPS](https://archive.ph/gXCRi) (`global`, `page`, `section`).
+> I couple that with a couple of cherry picked features from ECSS.
 
 Ben Frain's [ECSS](https://ecss.benfrain.com) naming conventions. All components are self-contained, grouped with their `html`/`js`/`...` files. Roll your [own classes and components](https://ecss.benfrain.com/chapter4.html)!
 
